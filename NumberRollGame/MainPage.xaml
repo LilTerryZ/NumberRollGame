@@ -9,6 +9,38 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1F831A" Offset="0.99"/>
+                <GradientStop Color="#FF22DC19" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Number Roll" Foreground="White" FontWeight="Bold" Margin="20" FontSize="72" />
+                <TextBlock x:Name="txttitle" Foreground="White" FontWeight="Light" Margin="20" FontSize="45" VerticalAlignment="Bottom"></TextBlock>
+            </StackPanel>
+            <TextBlock x:Name="RoundText" Foreground="RosyBrown" Margin="24" TextWrapping="Wrap" HorizontalAlignment="Stretch" Height="62" VerticalAlignment="Stretch" FontSize="45"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="40,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.496,1.916">
+                <local:NumPage x:Name="Slot1" />
+                <local:NumPage x:Name="Slot2" />
+                <local:NumPage x:Name="Slot3" />
+                <local:NumPage x:Name="Slot4" />
+                <local:NumPage x:Name="Slot5" />
+            </StackPanel>
+            <Button x:Name="RollButton" HorizontalAlignment="Center" Margin="0,40,0,0" Click="RollButton_Click" Width="200" Height="100">
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="Roll!"  FontSize="40" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <StackPanel Orientation="Horizontal" >
+                <StackPanel Orientation="Vertical">
+            <TextBlock FontSize="40" x:Name="ScoreText" Foreground="Yellow" Margin="24,0,24,0" Height="64" />
+            <TextBlock x:Name="WinText" FontSize="25" Foreground="White" Margin="24,0,24,0" TextWrapping="Wrap" HorizontalAlignment="Stretch" Height="62" VerticalAlignment="Stretch" />
+            </StackPanel>
+            <Button x:Name="bResult" Background="Black" Foreground="White" FontSize="25" Visibility="Collapsed" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="170" Height="80" Click="BResult_Click" Margin="20">Result</Button>
+            <Button x:Name="bPagain" Background="Black" Foreground="White" FontSize="25" Visibility="Collapsed" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="170" Height="80"  Margin="20" Click="BPagain_Click">Play Again</Button>
+        </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

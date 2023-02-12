@@ -1,0 +1,27 @@
+﻿<UserControl
+    x:Class="NumberRollGame.NumPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NumberRollGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid>
+        <Canvas Width="100" Height="100" Margin="10">
+            <Image x:Name="Q" Width="100" Height="100" Source="Assets/question.jpg" Visibility="Visible" />
+            <Image x:Name="Num1" Width="100" Height="100" Source="Assets/1.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num2" Width="100" Height="100" Source="Assets/2.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num3" Width="100" Height="100" Source="Assets/3.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num4" Width="100" Height="100" Source="Assets/4.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num5" Width="100" Height="100" Source="Assets/5.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num6" Width="100" Height="100" Source="Assets/6.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num7" Width="100" Height="100" Source="Assets/7.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num8" Width="100" Height="100" Source="Assets/8.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num9" Width="100" Height="100" Source="Assets/9.jpg" Visibility="Collapsed" />
+            <Image x:Name="Num10" Width="100" Height="100" Source="Assets/10.jpg" Visibility="Collapsed" />
+        </Canvas>
+    </Grid>
+</UserControl>
